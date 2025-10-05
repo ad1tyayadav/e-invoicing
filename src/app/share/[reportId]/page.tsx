@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { supabase } from '@/lib/supabase';
 import ShareReport from '@/components/ShareReport';
 import { Report } from '@/types';
