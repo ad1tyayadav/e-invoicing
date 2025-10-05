@@ -6,6 +6,7 @@ export interface FieldMatch {
   target: string;
   candidate: string;
   confidence: number;
+  suggestion?: string;
 }
 
 export interface CoverageResult {
@@ -40,7 +41,7 @@ export async function detectFields(data: any[]): Promise<CoverageResult> {
 
   if (close.length > 0) {
     const suggestionPromises = close.map(async (match) => {
-      const aiSuggestion = await generateFieldSuggestion(
+      const aiSuggestion : AISuggestion = await generateFieldSuggestion(
         match.target,
         match.candidate,
         match.confidence

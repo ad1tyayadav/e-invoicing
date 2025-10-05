@@ -28,6 +28,7 @@ export interface Upload {
 
 export interface Report {
   reportId: string;
+  uploads: Upload | null;
   scores: {
     data: number;
     coverage: number;

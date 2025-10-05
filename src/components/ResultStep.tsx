@@ -134,7 +134,7 @@ export default function ResultsStep({ report, onReset }: ResultsStepProps) {
           <h3 className="text-lg font-medium text-gray-900 mb-4">🧠 AI-Powered Field Mapping Suggestions</h3>
           <div className="space-y-3">
             {report.coverage.close.map((match, i) => (
-              <AIMappingCard key={i} candidate={match.candidate} target={match.target} confidence={match.confidence} suggestion={match.suggestion} />
+              <AIMappingCard key={i} candidate={match.candidate} target={match.target} confidence={match.confidence} suggestion={match.suggestion ? <span>{match.suggestion}</span> : undefined} />
             ))}
           </div>
         </div>

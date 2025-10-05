@@ -68,7 +68,8 @@ const report: Report = {
     erp: upload.erp || 'Unknown',
     db: 'supabase',
     aiEnabled: process.env.ENABLE_AI === 'true'
-  }
+  },
+  uploads: null
 };
 
     // Store report

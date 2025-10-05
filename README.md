@@ -77,7 +77,7 @@ A full-stack web tool that analyzes invoice data against the GETS v0.1 standard 
     
 *   **PDF Generation**: jsPDF with html2canvas
     
-*   **UI Components**: Custom components with Shadcn/ui inspiration
+*   **UI Components**: Custom components
     
 *   **Deployment**: Vercel with environment variables
     
